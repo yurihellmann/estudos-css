@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor por Atributo</title>
+    <style>
+        /* [title~="Streaming"] {
+            color: red;
+        } */ 
+        /* procura pela palavra exata ou que contenha */
+
+        /* [title|="Streaming"] {
+            color: red;
+        } */
+        /* procura pela palavra exata ou pela palavra seguida de hífen */
+
+        [href^="http://"] {
+            background: lightgreen;
+        }
+        /* procura pelo prefixo do atributo */
+
+        [href$="login"] {
+            background: lightcoral;
+        }
+        /* procura pelo sufixo do atributo */
+
+        [href*="login"] {
+            background: lightcoral;
+        }
+        /* procura em qualquer lugar a determinada palavra */
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a title="Streaming-Netflix" href="http://www.login.netflix.com">Netflix</a></li>
+            <li><a title="Streaming Prime" href="http://www.primevideo.com">Prime Video</a></li>
+            <li><a title="Spotify" href="www.spotify.com/login">Spotify</a></li>
+            <li><a>Disney Plus</a></li>
+        </ul>
+    </div>
+</body>
+</html>

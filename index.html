@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <!--<link rel="stylesheet" href="assets/css/style.css">-->
+    <style>
+        * {
+            font-weight: bold;
+        }
+
+        h1 { /*por tipo*/
+            background: darkblue;
+            color: lightgreen;
+        }
+
+        div { /*por tipo*/
+            background: lightblue;
+        }
+
+        #texto-boas-vindas { /*por id*/
+            background: red;
+            color: white;
+        }
+
+        .seletores-mais-comuns { /*por classe*/
+            color: red;
+
+        }
+
+        .texto-maiusculo { /*por classe*/
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletores CSS</h1>
+    <p id="texto-boas-vindas">Bem-vindo</p>
+    <div>
+        <ul>
+            <li class="seletores-mais-comuns texto-maiusculo"><p><strong>Seletor por Tipo: </strong>busca elementos por uma tag HTML especifica. Ex.: h1, h2, ul, li etc.</p></li>
+            <li class="seletores-mais-comuns texto-maiusculo"><p><strong>Seletor por ID (#): </strong>busca elementos através do atributo "id".</p></li>
+            <li class="seletores-mais-comuns"><p><strong>Seletor por Classe (.): </strong>busca elementos através do atributo "class".</p></li>
+            <li><p><strong>Seletor Universal (*): </strong>seleciona TODOS os elementos do CSS.</p></li>
+            <li class="texto-maiusculo"><p><strong>Seletor de Atributo ([atrib]): </strong>seleciona elemtnos que possuem um atributo específico no HTML. É possível buscar atributos por um valor específico.</p></li>
+        </ul>
+    </div>
+</body>
+</html>
